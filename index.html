@@ -7,11 +7,12 @@
     <title>Home - IXD Team 14</title>
   </head>
   <body class="box-border">
+    <!-- header -->
     <div
-      class="flex gap-5 justify-between px-20 py-3 w-full bg-white max-md:flex-wrap max-md:px-5 max-md:max-w-full"
+      class="flex gap-5 justify-between px-5 py-3 w-full bg-white max-md:flex-wrap max-md:px-5 max-md:max-w-full"
     >
       <div
-        class="flex gap-5 justify-between text-sm leading-5 max-md:flex-wrap max-md:max-w-full"
+        class="flex gap-5 justify-between items-start max-md:flex-wrap max-md:max-w-full"
       >
         <img
           loading="lazy"
@@ -25,20 +26,22 @@
             https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
             https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&
           "
-          class="shrink-0 self-start mt-4 max-w-full aspect-[5] w-[153px]"
+          class="shrink-0 mt-4 max-w-full aspect-[5] w-[153px]"
         />
-        <div class="flex gap-5 justify-between whitespace-nowrap">
-          <div
-            class="flex flex-col justify-end items-start px-6 pt-5 font-semibold bg-black bg-opacity-0 text-zinc-900 max-md:px-5"
-          >
-            <div>Home</div>
-            <div class="shrink-0 mt-5 bg-neutral-900 h-[3px]"></div>
-          </div>
-          <div class="my-auto text-gray-600">Explore</div>
+        <div
+          class="flex gap-5 justify-between self-stretch text-xs leading-5 whitespace-nowrap text-neutral-400"
+        >
+          <div class="my-auto">Home</div>
+          <div class="my-auto">Explore</div>
+          <div class="my-auto">Up coming Events</div>
         </div>
-        <div class="flex gap-5 my-auto">
-          <div class="flex-auto text-gray-600">Upcoming Events</div>
-          <div class="text-neutral-800">My tickets</div>
+        <div class="flex gap-5 mt-5">
+          <div class="flex flex-col text-base leading-6 text-sky-950">
+            <div>My tickets</div>
+            <div
+              class="shrink-0 self-center mt-3.5 bg-sky-950 h-[3px] w-[53px]"
+            ></div>
+          </div>
         </div>
       </div>
       <div
@@ -56,7 +59,7 @@
         />
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/0a14b02fb0d200d2abd8342ecd7ad7fd1b3c6572a0236bd8d4b6c20c11b175bf?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+          src="https://cdn.builder.io/api/v1/image/assets/TEMP/187d21ffaa18a0b5dce1baee492e73d5850c494db2bfc7ce82afae0d96c77270?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
           class="shrink-0 self-start w-9 aspect-square"
         />
       </div>
@@ -266,25 +269,10 @@
 
     <!-- footer -->
     <div
-      class="flex gap-5 justify-between mt-24 max-md:flex-wrap max-md:mt-10 max-md:max-w-full"
+      class="flex flex-col items-center px-5 pt-14 pb-5 mt-4 w-full bg-white max-md:px-5 max-md:max-w-full"
     >
       <div
-        class="text-5xl font-semibold leading-[63.84px] text-sky-950 max-md:max-w-full max-md:text-4xl"
-      >
-        Want to host an event? Become a Organisor
-      </div>
-      <div
-        class="flex-wrap justify-center content-center self-start px-7 py-3.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950 max-md:px-5"
-      >
-        Login as organisor
-      </div>
-    </div>
-    <!-- footer content -->
-    <div
-      class="flex flex-col items-center px-20 pt-14 pb-5 mt-4 w-full bg-white max-md:px-5 max-md:max-w-full"
-    >
-      <div
-        class="flex gap-5 items-start w-full max-w-[1444px] max-md:flex-wrap max-md:pr-5 max-md:max-w-full"
+        class="flex gap-5 items-start w-full max-w-[1444px] max-md:flex-wrap max-md:pr-5 max-md:max-w-full justify-between"
       >
         <div class="flex flex-col self-stretch max-md:max-w-full">
           <div
@@ -315,12 +303,12 @@
             <div class="mt-6">Taxes</div>
           </div>
         </div>
-        <div class="flex flex-col mt-2.5 text-base leading-6 text-stone-500">
+        <div class="flex flex-col mt-1 text-base leading-6 text-stone-500">
           <div class="text-xl font-bold leading-8 text-sky-950">Company</div>
           <div class="mt-5">About</div>
           <div class="mt-6">Join us</div>
         </div>
-        <div class="flex flex-col mt-2 text-base">
+        <div class="flex flex-col mt-1 text-base">
           <div class="text-xl font-bold leading-8 text-sky-950">
             Stay in the loop
           </div>
