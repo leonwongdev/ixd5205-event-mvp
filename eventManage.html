@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event Management</title>
+  </head>
+  <body>
+<section class="flex gap-5 justify-between px-9 py-4 bg-white max-md:flex-wrap max-md:px-5">
+    <div class="flex gap-5 justify-between text-sm leading-5 text-center max-md:flex-wrap max-md:max-w-full">
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a31bf872c53b2dacc19cc10d2d861ef12450b0c96dec5ee145e81c55f3825b37?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Company logo" class="my-auto aspect-[5] w-[230px]" />
+      <nav class="flex gap-0 bg-black bg-opacity-0">
+        <div class="flex flex-col justify-end pt-5 font-bold whitespace-nowrap bg-black bg-opacity-0 text-zinc-900">
+          <div class="self-center">Dashboard</div>
+          <div class="shrink-0 mt-4 h-1 bg-zinc-900"></div>
+        </div>
+        <div class="grow justify-center px-14 py-5 text-gray-600 bg-black bg-opacity-0 w-fit max-md:px-5">
+          All Events
+        </div>
+      </nav>
+    </div>
+    <div class="flex gap-5 justify-between self-start mt-1 text-base font-medium text-yellow-500">
+      <button class="flex-wrap justify-center content-center px-7 py-3.5 rounded-lg bg-sky-950 max-md:px-5">
+        Create Event
+      </button>
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76664882f96fa368218b67e2a608ff2949b1078f6decbee983766f3a293a2bb?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Notification icon" class="shrink-0 my-auto w-6 aspect-square" />
+      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ade6ff717f45dd2f93689bab417dc3b973a002e0fd26b7e1a9af235a2c5c746?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User profile picture" class=" mt-2 shrink-0 self-start w-9 shadow-sm aspect-square" />
+    </div>
+  </section>
+  <nav aria-label="Breadcrumb">
+    <ol class="ml-10 list-none p-0 inline-flex items-center text-lg font-medium text-neutral-400">
+      <li class="flex items-center">
+        <a href="#" class="hover:text-neutral-500 focus:outline-none focus:underline">Homepage</a>
+        <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+      </li>
+    </ol>
+  </nav>
+  <section class=" ml-10 mb-10 flex gap-5 px-0.5 mt-11 w-full text-black max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+    <h1 class="mr-96 justify-around text-3xl font-bold">Manage All Events</h1>
+    <div class="flex gap-5 ml-72 justify-between self-start mt-1 text-base">
+      <div class="flex gap-3.5 items-start self-start">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7bb54fe66d54c1de272369e09eaf863f757e37baea382cf2e554a017a2e68a5?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Sort icon" class="shrink-0 mt-2 aspect-square w-[18px]" />
+        <p>Sort (A-Z)</p>
+      </div>
+      <div class="flex gap-3 items-start">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/a489a1ab6ff7a8c3689347cd7137864fcb12a338116e4f3671f39968c78440a7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Filter icon" class="shrink-0 mt-1.5 w-5 aspect-[0.77] fill-zinc-900" />
+        <p>Filters (2)</p>
+      </div>
+    </div>
+  </section>
+  <div class="flex flex-col mb-64">
+    <div class="px-5 w-full max-md:max-w-full">
+      <div class="flex gap-1 max-md:flex-col max-md:gap-0">
+        <div class="flex flex-col w-[32%] max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow pb-5 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-sky-950 max-md:mt-6 max-md:max-w-full">
+            <header class="flex flex-col px-10 pt-5 pb-2.5 rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+              <h3 class="text-lg leading-5 max-md:mx-1.5">UX Design: Upcoming Patterns</h3>
+              <time class="mt-3.5 text-2xl max-md:mx-1.5" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+            </header>
+            <div class="flex flex-col px-5 mt-7 text-base leading-5 max-md:max-w-full">
+              <p class="leading-6 text-stone-500 max-md:mr-2">A career fair connected eager students with top employers, paving the way for future internships and job placements</p>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6f2877373e8f916bd309e41b4ae86c20896ab91076a79a304d05357aae837b7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Free icon" class="shrink-0 w-6 aspect-[1.27] fill-sky-950" />
+                <span>FREE</span>
+              </div>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/04b411cb5ce07a66c8e4bfa09119755618c4217add3194d2389c3c25a2467de2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Attendee count icon" class="shrink-0 w-6 aspect-[1.49] fill-sky-950" />
+                <span>100</span>
+              </div>
+              <div class="flex gap-3 mt-7 text-sky-950">
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="flex flex-col ml-5 w-[32%] max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow pb-5 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-sky-950 max-md:mt-6 max-md:max-w-full">
+            <header class="flex flex-col px-10 pt-5 pb-2.5 rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+              <h3 class="text-lg leading-5 max-md:mx-1.5">UX Design: Upcoming Patterns</h3>
+              <time class="mt-3.5 text-2xl max-md:mx-1.5" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+            </header>
+            <div class="flex flex-col px-5 mt-7 text-base leading-5 max-md:max-w-full">
+              <p class="leading-6 text-stone-500 max-md:mr-2">A career fair connected eager students with top employers, paving the way for future internships and job placements</p>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6f2877373e8f916bd309e41b4ae86c20896ab91076a79a304d05357aae837b7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Free icon" class="shrink-0 w-6 aspect-[1.27] fill-sky-950" />
+                <span>FREE</span>
+              </div>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/04b411cb5ce07a66c8e4bfa09119755618c4217add3194d2389c3c25a2467de2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Attendee count icon" class="shrink-0 w-6 aspect-[1.49] fill-sky-950" />
+                <span>100</span>
+              </div>
+              <div class="flex gap-3 mt-7 text-sky-950">
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="flex flex-col ml-5 w-[32%] max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow pb-5 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-sky-950 max-md:mt-6 max-md:max-w-full">
+            <header class="flex flex-col px-10 pt-5 pb-2.5 rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+              <h3 class="text-lg leading-5 max-md:mx-1.5">UX Design: Upcoming Patterns</h3>
+              <time class="mt-3.5 text-2xl max-md:mx-1.5" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+            </header>
+            <div class="flex flex-col px-5 mt-7 text-base leading-5 max-md:max-w-full">
+              <p class="leading-6 text-stone-500 max-md:mr-2">A career fair connected eager students with top employers, paving the way for future internships and job placements</p>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6f2877373e8f916bd309e41b4ae86c20896ab91076a79a304d05357aae837b7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Free icon" class="shrink-0 w-6 aspect-[1.27] fill-sky-950" />
+                <span>FREE</span>
+              </div>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/04b411cb5ce07a66c8e4bfa09119755618c4217add3194d2389c3c25a2467de2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Attendee count icon" class="shrink-0 w-6 aspect-[1.49] fill-sky-950" />
+                <span>100</span>
+              </div>
+              <div class="flex gap-3 mt-7 text-sky-950">
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+    <div class="px-5 mt-8 max-w-full w-full">
+      <div class="flex gap-1 max-md:flex-col max-md:gap-0">
+        <div class="flex flex-col w-[32%] max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow pb-5 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-sky-950 max-md:mt-6 max-md:max-w-full">
+            <header class="flex flex-col px-10 pt-5 pb-2.5 rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+              <h3 class="text-lg leading-5 max-md:mx-1.5">UX Design: Upcoming Patterns</h3>
+              <time class="mt-3.5 text-2xl max-md:mx-1.5" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+            </header>
+            <div class="flex flex-col px-5 mt-7 text-base leading-5 max-md:max-w-full">
+              <p class="leading-6 text-stone-500 max-md:mr-2">A career fair connected eager students with top employers, paving the way for future internships and job placements</p>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6f2877373e8f916bd309e41b4ae86c20896ab91076a79a304d05357aae837b7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Free icon" class="shrink-0 w-6 aspect-[1.27] fill-sky-950" />
+                <span>FREE</span>
+              </div>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/04b411cb5ce07a66c8e4bfa09119755618c4217add3194d2389c3c25a2467de2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Attendee count icon" class="shrink-0 w-6 aspect-[1.49] fill-sky-950" />
+                <span>100</span>
+              </div>
+              <div class="flex gap-5 mt-7 text-sky-950">
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="flex flex-col ml-5 w-[32%] max-md:ml-0 max-md:w-full">
+          <article class="flex flex-col grow pb-5 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-sky-950 max-md:mt-6 max-md:max-w-full">
+            <header class="flex flex-col px-10 pt-5 pb-2.5 rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+              <h3 class="text-lg leading-5 max-md:mx-1.5">UX Design: Upcoming Patterns</h3>
+              <time class="mt-3.5 text-2xl max-md:mx-1.5" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+            </header>
+            <div class="flex flex-col px-5 mt-7 text-base leading-5 max-md:max-w-full">
+              <p class="leading-6 text-stone-500 max-md:mr-2">A career fair connected eager students with top employers, paving the way for future internships and job placements</p>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6f2877373e8f916bd309e41b4ae86c20896ab91076a79a304d05357aae837b7?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Free icon" class="shrink-0 w-6 aspect-[1.27] fill-sky-950" />
+                <span>FREE</span>
+              </div>
+              <div class="flex gap-3 self-start mt-5 text-lg whitespace-nowrap">
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/04b411cb5ce07a66c8e4bfa09119755618c4217add3194d2389c3c25a2467de2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Attendee count icon" class="shrink-0 w-6 aspect-[1.49] fill-sky-950" />
+                <span>100</span>
+              </div>
+              <div class="flex gap-5 mt-7 text-sky-950">
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <footer class="bg-gray-50 text-zinc-900">
+    <div class="flex justify-center items-center px-16 py-5 max-md:px-5">
+      <div class="flex gap-5 justify-between w-full max-w-[1176px] max-md:flex-wrap max-md:max-w-full">
+        <div class="flex gap-5 self-start mt-1.5 text-sm leading-5">
+          <p class="grow">© 2024 Humber, Inc.</p>
+          <div class="flex gap-2 whitespace-nowrap">
+            <span class="my-auto" aria-hidden="true">•</span>
+            <a href="#">Privacy</a>
+            <span class="my-auto" aria-hidden="true">•</span>
+            <a href="#">Terms</a>
+          </div>
+        </div>
+        <div class="flex gap-4 text-xs font-bold leading-5 text-right uppercase whitespace-nowrap">
+          <p class="grow my-auto">cad</p>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cff1f4a67876afc3be21a732af792a5e25fac8f4d6ff8839d3917beaffb5c2f4?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3494ba665b64f260388be3c37179af4383b547d6d0ae43f65f4370b331c955e9?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/212cd9a62a723a58bb5b3d307dd706445df199820086a873152e53bea2ce6573?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b77a472898b1bfc73bddbd8254a4986b09ed8f267996d5b24e850d2f903cb2d?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

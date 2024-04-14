@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event Management</title>
+  </head>
+  <body>
+    <div class="mt-8 mb-10 flex gap-5 justify-between max-md:flex-wrap">
+        <div class="flex gap-5 justify-between items-start self-start px-5 mt-2 text-base leading-6 text-stone-500 max-md:flex-wrap max-md:max-w-full">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Company logo" class="shrink-0 max-w-full aspect-[5] w-[153px]" />
+          <nav class="flex flex-col self-stretch text-lg font-medium leading-5 whitespace-nowrap text-sky-950">
+            <a href="#" class="active">Dashboard</a>
+            <div class="shrink-0 self-center mt-4 bg-sky-950 h-[3px] w-[53px]" aria-hidden="true"></div>
+          </nav>
+          <a href="#">All Events</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="flex gap-5 justify-between px-5 max-md:flex-wrap max-md:max-w-full">
+          <form class="flex gap-3 items-start px-5 py-3 text-xs leading-5 bg-white rounded-lg border border-solid border-slate-400 text-slate-400">
+            <label for="search" class="sr-only">Search Anything..</label>
+            <input type="search" id="search" placeholder="Search Anything.." class="flex-auto" />
+            <button type="submit" aria-label="Search">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/879d4935f60a32df3280b12615d728b0e12888d09e0a76707b67681e5a7aade4?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 aspect-square fill-slate-400 w-[18px]" />
+            </button>
+          </form>
+          <a href="#" class="justify-center px-5 py-2.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950">Create a Event</a>
+          <button type="button" aria-label="Notifications">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bd65dcea0314c80ce4ca890a022bd656c5f9b2bc8055a85531f0096144619fef?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 self-start mt-5 w-5 aspect-square" />
+          </button>
+          <button type="button" aria-label="User profile">  
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ee9ebf897b539f8669d22490898bde871df820b03d40df9456600997e9dee2c?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User avatar" class="shrink-0 self-start mt-1 w-9 aspect-square" />
+          </button>
+        </div>
+    </div>
+
+    <h1 class="self-start mt-28 ml-14 text-3xl font-semibold text-sky-950 max-md:mt-10 max-md:ml-2.5">
+        Preview New Event
+      </h1>
+      <img loading="lazy" src="img/Rectangle 83.png" class="mt-10 w-full aspect-[3.03] max-md:max-w-full"/>
+      <section class="flex flex-col px-20 mt-11 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <div class="max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <article class="flex flex-col w-[66%] max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col mt-3 max-md:mt-10 max-md:max-w-full">
+                <h1 class="text-5xl font-semibold leading-[63.84px] text-sky-950 max-md:max-w-full max-md:text-4xl">
+                  UX Design: Upcoming Patterns
+                </h1>
+                <p class="mt-11 text-2xl font-medium text-stone-500 max-md:mt-10 max-md:max-w-full">
+                  Insightful exploration into the world of UX design patterns and trends. Discover the latest innovations, best practices, and emerging concepts shaping user experiences today. From intuitive interfaces to cutting-edge interactions, this event promises to inspire and inform designers, developers, and enthusiasts alike.
+                </p>
+                <h2 class="mt-14 text-2xl font-medium text-sky-950 max-md:mt-10 max-md:max-w-full">
+                  Speakers
+                </h2>
+                <div class="flex gap-5 mt-7 w-full max-md:flex-wrap max-md:max-w-full">
+                  <div class="flex flex-auto gap-4 max-md:flex-wrap">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d6b3a92bdc31d639cbf019e8a59497deccdc897d58db70afb6a0e9d27d16a22d?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Sarah Spark" class="shrink-0 w-[64px] h-[64px] aspect-square">
+                    <div class="flex flex-col grow shrink-0 self-start mt-2 basis-0 w-fit">
+                      <h3 class="text-3xl font-semibold text-sky-950">Sarah Spark</h3>
+                      <p class="mt-2.5 text-lg font-medium leading-5 text-stone-500">
+                        Chief Experience Designer at InovateUX
+                      </p>
+                    </div>
+                  </div>
+                  <div class="flex flex-auto gap-5 items-start">
+                    <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/d2ba9333277c23cd9a55305866357d53cba0abef9f9300915d272ee6d97f60b6?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Kenny Parik" class="shrink-0 w-16 aspect-square">
+                    <div class="flex flex-col grow shrink-0 mt-2 basis-0 w-fit">
+                      <h3 class="text-3xl font-semibold text-sky-950">Kenny Parik</h3>
+                      <p class="mt-2.5 text-lg font-medium leading-5 text-stone-500">
+                        Lead Designer at TechTrends Inc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <h2 class="mt-24 text-2xl font-medium text-sky-950 max-md:mt-10 max-md:max-w-full">
+                  Not Visible to Others
+                </h2>
+              </div>
+            </article>
+            <aside class="flex flex-col ml-5 w-[34%] max-md:ml-0 max-md:w-full">
+              <div class="flex overflow-hidden relative flex-col grow items-center px-12 py-20 border-solid border-[3px] border-slate-400 border-opacity-30 fill-white min-h-[563px] stroke-[3px] stroke-slate-400 stroke-opacity-30 text-sky-950 max-md:px-5 max-md:mt-10 max-md:max-w-full">
+                <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/9228193d61f9569bc157cf3811c3133fe71b835674e659c20d21cae7311bdcd2?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Event background" class="object-cover absolute inset-0 size-full">
+                <h2 class="relative mt-9 w-64 text-2xl font-medium text-center">
+                  UX Design: Upcoming Patterns
+                </h2>
+                <hr class="relative shrink-0 self-stretch mt-5 border-solid bg-slate-400 bg-opacity-30 border-[3px] border-slate-400 border-opacity-30 h-[3px]">
+                <div class="flex relative gap-5 self-stretch px-0.5 mt-7">
+                  <div class="flex flex-col flex-1">
+                    <time class="text-3xl font-semibold" datetime="2023-04-08">8th April</time>
+                    <p class="self-center mt-3.5 text-lg font-medium leading-5">
+                      Tuesday
+                    </p>
+                  </div>
+                  <div class="flex flex-col flex-1">
+                    <p class="text-3xl font-semibold">Humber</p>
+                    <p class="mt-5 text-lg font-medium leading-5">
+                      College North
+                    </p>
+                  </div>
+                </div>
+                <p class="relative mt-14 text-5xl font-semibold text-center text-yellow-500 leading-[63.84px] max-md:mt-10 max-md:text-4xl">
+                  Free
+                </p>
+                <button class="relative flex-wrap justify-center content-center px-7 py-3.5 mt-11 text-base font-medium text-yellow-500 rounded-lg bg-sky-950 max-md:px-5 max-md:mt-10">
+                  Register Now
+                </button>
+              </div>
+            </aside>
+          </div>
+        </div>
+        <div class="flex gap-5 justify-between items-start mt-1.5 max-w-full text-lg font-medium leading-5 w-[902px] max-md:flex-wrap">
+          <div class="flex flex-col self-stretch text-stone-500">
+            <p>Event Type</p>
+            <p class="mt-6 text-sky-950">Educational</p>
+            <p class="mt-11 max-md:mt-10">Participants</p>
+            <p class="mt-6 text-sky-950">120-160</p>
+            <button class="flex-wrap justify-center content-center px-7 py-3.5 mt-14 text-base text-yellow-500 whitespace-nowrap rounded-lg bg-sky-950 max-md:px-5 max-md:mt-10">
+              Publish
+            </button>
+          </div>
+          <div class="flex flex-col">
+            <div class="flex gap-5 text-stone-500">
+              <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/62cdc837d1b88ee0ff69bb3873636bbe736e4b8539fda5d873a485b1c6100c8f?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Event category icon" class="shrink-0 self-start aspect-[1.47] fill-slate-400 w-[22px]">
+              <p class="flex-auto">Event Category</p>
+            </div>
+            <p class="self-end mt-6 mr-12 text-sky-950 max-md:mr-2.5">
+              UX Design
+            </p>
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/62cdc837d1b88ee0ff69bb3873636bbe736e4b8539fda5d873a485b1c6100c8f?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Event category icon" class="mt-10 aspect-[1.47] fill-slate-400 w-[22px]">
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/62cdc837d1b88ee0ff69bb3873636bbe736e4b8539fda5d873a485b1c6100c8f?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Entry restrictions icon" class="shrink-0 aspect-[1.47] fill-slate-400 w-[22px]">
+          <div class="flex flex-col">
+            <p class="text-stone-500">Entry Restrictions</p>
+            <p class="mt-6 text-sky-950">Open To All</p>
+          </div>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/62cdc837d1b88ee0ff69bb3873636bbe736e4b8539fda5d873a485b1c6100c8f?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Entry restrictions icon" class="shrink-0 aspect-[1.47] fill-slate-400 w-[22px]">
+        </div>
+      </section>
+    <div class="flex gap-5 justify-between mt-20 max-md:flex-wrap max-md:mt-10 max-md:max-w-full px-5">
+        <div class="text-4xl font-semibold leading-[63.84px] text-sky-950 max-md:max-w-full max-md:text-4xl">
+          Want to host an event? Become a Organisor
+        </div>
+        <div class="flex-wrap justify-center content-center self-start px-7 py-3.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950 max-md:px-5">
+          Login as organisor
+        </div>
+      </div>
+      <!-- footer -->
+      <div class="flex flex-col items-center px-5 pt-14 pb-5 mt-4 w-full bg-white max-md:px-5 max-md:max-w-full">
+        <div class="flex gap-5 items-start w-full max-w-[1444px] max-md:flex-wrap max-md:pr-5 max-md:max-w-full justify-between">
+          <div class="flex flex-col self-stretch max-md:max-w-full">
+            <img
+              loading="lazy"
+              srcset="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c77cf796f224a1f2b38b32633f38f30a7bd6641f29b2ee50d868e5a90bca2694?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+              "
+              class="shrink-0 max-w-full aspect-[5] w-[206px]"
+            />
+          </div>
+          <div class="flex flex-col self-stretch max-md:max-w-full">
+            <div class="flex gap-5 text-xl font-bold leading-8 whitespace-nowrap text-sky-950 max-md:flex-wrap max-md:max-w-full">
+              <div class="flex-auto my-auto">Resources</div>
+            </div>
+            <div class="flex flex-col self-end mt-1.5 text-base leading-6 text-stone-500">
+              <div class="max-md:mr-0.5">User guides</div>
+              <div class="mt-5">Help Center</div>
+              <div class="mt-5">Partners</div>
+              <div class="mt-6">Taxes</div>
+            </div>
+          </div>
+          <div class="flex flex-col mt-1 text-base leading-6 text-stone-500">
+            <div class="text-xl font-bold leading-8 text-sky-950">Company</div>
+            <div class="mt-5">About</div>
+            <div class="mt-6">Join us</div>
+          </div>
+          <div class="flex flex-col mt-1 text-base">
+            <div class="text-xl font-bold leading-8 text-sky-950">
+              Stay in the loop
+            </div>
+            <div class="mt-5 leading-[137.5%] text-stone-500">
+              For product announcements and exclusive insights
+            </div>
+            <div class="flex gap-3.5 mt-3">
+              <div class="flex flex-auto gap-3.5 px-3.5 py-3 rounded-lg border border-solid bg-black bg-opacity-0 border-slate-400 leading-[137.5%] text-slate-400">
+                <img
+                  loading="lazy"
+                  src="https://cdn.builder.io/api/v1/image/assets/TEMP/015bc731cd8e2cc2961887267764618178b6d08a08d15314a7fd1b640db52a27?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+                  class="shrink-0 self-start w-4 aspect-square"
+                />
+                <div class="flex-auto">Input your email</div>
+              </div>
+              <div class="justify-center self-start px-5 py-2.5 font-medium whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 text-sky-950">
+                Subscribe
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-5 items-center mt-6 w-full max-w-[1382px] max-md:flex-wrap max-md:max-w-full">
+          <div class="flex gap-5 justify-center self-stretch py-2.5 pr-14 pl-4 text-sm leading-5 text-gray-700 whitespace-nowrap border border-solid bg-black bg-opacity-0 border-zinc-400 max-md:pr-5">
+            <div>English</div>
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/0ce5c27f8c6d429815a1c16c59acccf3277644c98c87d52d853b8f9ba37f0b56?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 self-start w-4 aspect-square"
+            />
+          </div>
+          <div class="flex-auto self-stretch my-auto text-base leading-6 text-stone-500">
+            © 2024 Humber, Inc.
+          </div>
+          <div class="flex gap-2 self-stretch my-auto whitespace-nowrap">
+            <div class="my-auto text-xs leading-5 text-zinc-900">•</div>
+            <div class="flex gap-0 self-start">
+              <div class="grow text-base leading-6 text-stone-500">Terms</div>
+              <div class="my-auto text-xs leading-5 text-zinc-900">•</div>
+            </div>
+            <div class="text-base leading-6 text-stone-500">Sitemap</div>
+          </div>
+          <div class="flex gap-2 self-stretch my-auto">
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/48ce7f9361fdced2b3ff41318c3a61ad5f2dfb00246f2761cd14c906d806f538?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 w-6 aspect-square"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/a4be83238a7e46b8e6b2089394d23a9c9a980a84ea6cf1085f7b77d0f7d1ba5a?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 w-6 aspect-square"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/e5f77461a86dba2b81b2095ccacd34c480e3509f38420f8248a2690d2f6203c0?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 w-6 aspect-square"
+            />
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/c975dfd359b3b87bb8342e793d85920f10de8bee34c9260a8a5740e56a2b0953?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 w-6 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

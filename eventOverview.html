@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Event Management</title>
+  </head>
+  <body>
+    <div class="mt-8 mb-10 flex gap-5 justify-between max-md:flex-wrap">
+        <div class="flex gap-5 justify-between items-start self-start px-5 mt-2 text-base leading-6 text-stone-500 max-md:flex-wrap max-md:max-w-full">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Company logo" class="shrink-0 max-w-full aspect-[5] w-[153px]" />
+          <nav class="flex flex-col self-stretch text-lg font-medium leading-5 whitespace-nowrap text-sky-950">
+            <a href="#" class="active">Dashboard</a>
+            <div class="shrink-0 self-center mt-4 bg-sky-950 h-[3px] w-[53px]" aria-hidden="true"></div>
+          </nav>
+          <a href="#">All Events</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="flex gap-5 justify-between px-5 max-md:flex-wrap max-md:max-w-full">
+          <form class="flex gap-3 items-start px-5 py-3 text-xs leading-5 bg-white rounded-lg border border-solid border-slate-400 text-slate-400">
+            <label for="search" class="sr-only">Search Anything..</label>
+            <input type="search" id="search" placeholder="Search Anything.." class="flex-auto" />
+            <button type="submit" aria-label="Search">
+              <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/879d4935f60a32df3280b12615d728b0e12888d09e0a76707b67681e5a7aade4?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 aspect-square fill-slate-400 w-[18px]" />
+            </button>
+          </form>
+          <a href="#" class="justify-center px-5 py-2.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950">Create a Event</a>
+          <button type="button" aria-label="Notifications">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bd65dcea0314c80ce4ca890a022bd656c5f9b2bc8055a85531f0096144619fef?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 self-start mt-5 w-5 aspect-square" />
+          </button>
+          <button type="button" aria-label="User profile">  
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ee9ebf897b539f8669d22490898bde871df820b03d40df9456600997e9dee2c?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User avatar" class="shrink-0 self-start mt-1 w-9 aspect-square" />
+          </button>
+        </div>
+    </div>
+    <section class="flex flex-col px-10 mt-14 mb-14 w-full max-md:px-5 max-md:mt-10 max-md:max-w-full">
+        <nav class="text-lg font-medium text-neutral-400 max-md:max-w-full">
+          All Events &gt; Event Overview &gt;
+        </nav>
+        <header class="flex gap-5 mt-11 w-full max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+          <h1 class="grow my-auto text-3xl font-semibold text-sky-950 max-md:max-w-full">
+            Event Overview - UX Design: Upcoming Patterns
+          </h1>
+          <div class="flex gap-5 text-base font-medium text-sky-950 max-md:flex-wrap">
+            <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">
+              Share Event
+            </button>
+            <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">
+              Edit Event
+            </button>
+            <button class="flex-wrap justify-center content-center px-7 py-3.5 text-red-600 bg-white rounded-lg border border-red-600 border-solid max-md:px-5">
+              Delete Event
+            </button>
+          </div>
+        </header>
+        <main class="mt-7 max-md:max-w-full">
+          <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+            <section class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+              <article class="flex flex-col grow pb-11 w-full bg-white rounded-md border-2 border-solid border-slate-400 border-opacity-30 max-md:mt-6 max-md:max-w-full">
+                <header class="flex flex-col px-9 py-11 text-black rounded-md border-t border-r border-l border-solid bg-zinc-100 border-slate-400 border-opacity-30 max-md:px-5 max-md:max-w-full">
+                  <h2 class="text-2xl font-medium">UX Design: Upcoming Patterns</h2>
+                  <time class="mt-5 text-3xl font-semibold" datetime="2024-04-08T15:30">April 8, 2024 - 03:30pm</time>
+                </header>
+                <div class="flex flex-col px-9 mt-10 text-xs leading-5 text-neutral-700 max-md:px-5 max-md:max-w-full">
+                  <p class="text-base leading-6">
+                    A career fair connected eager students with top employers, paving the way for future internships and job placements
+                  </p>
+                  <h3 class="mt-8">Event Type</h3>
+                  <p class="mt-4 text-lg font-medium leading-5">Academic, Networking</p>
+                  <h3 class="mt-10">Entry Restrictions</h3>
+                  <p class="mt-4 text-lg font-medium leading-5">Open to All</p>
+                  <h3 class="mt-10">Ticket</h3>
+                  <p class="mt-5 text-lg font-medium leading-5">Free</p>
+                  <h3 class="mt-11 max-md:mt-10">Venue</h3>
+                  <p class="mt-5 text-lg font-medium leading-5">Humber College, North</p>
+                </div>
+              </article>
+            </section>
+            <section class="flex flex-col ml-5 w-[67%] max-md:ml-0 max-md:w-full">
+              <div class="flex flex-col grow max-md:mt-6 max-md:max-w-full">
+                <div class="max-md:max-w-full">
+                  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                    <div class="flex flex-col w-[33%] max-md:ml-0 max-md:w-full">
+                      <div class="flex flex-col grow items-start py-9 pr-16 pl-6 w-full bg-white rounded-md border border-solid border-slate-400 border-opacity-30 max-md:px-5 max-md:mt-6">
+                        <h3 class="text-lg font-medium leading-5 text-stone-500">Total Registrations</h3>
+                        <p class="mt-6 text-5xl font-semibold leading-[63.84px] text-sky-950 max-md:text-4xl">100/160</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                      <div class="flex flex-col grow items-start py-10 pr-20 pl-6 w-full whitespace-nowrap bg-white rounded-md border border-solid border-slate-400 border-opacity-30 max-md:px-5 max-md:mt-6">
+                        <h3 class="text-lg font-medium leading-5 text-stone-500">Students</h3>
+                        <p class="mt-7 text-5xl font-semibold leading-[63.84px] text-sky-950 max-md:text-4xl">70</p>
+                      </div>
+                    </div>
+                    <div class="flex flex-col ml-5 w-[33%] max-md:ml-0 max-md:w-full">
+                      <div class="flex flex-col grow items-start py-10 pr-20 pl-6 w-full bg-white rounded-md border border-solid border-slate-400 border-opacity-30 max-md:px-5 max-md:mt-6">
+                        <h3 class="text-lg font-medium leading-5 text-stone-500">Non Students</h3>
+                        <p class="mt-7 text-5xl font-semibold leading-[63.84px] text-sky-950 max-md:text-4xl">30</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-8 max-md:max-w-full">
+                  <div class="flex gap-5 max-md:flex-col max-md:gap-0">
+                    <div class="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
+                      <figure class="flex flex-col grow px-8 pt-8 pb-20 w-full text-lg font-medium leading-5 bg-white rounded-md border border-solid border-slate-400 border-opacity-30 text-stone-500 max-md:px-5 max-md:mt-6 max-md:max-w-full">
+                        <figcaption>Total Registrations</figcaption>
+                        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c2239d26a51f2a6955b099a1ac68af71c2a0b5c184950e1a5d8b6291dbff5492?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Total Registrations Graph" class="mt-14 w-full border-2 border-solid aspect-[1.37] border-neutral-400 stroke-[2px] stroke-neutral-400 max-md:mt-10" />
+                      </figure>
+                    </div>
+                    <div class="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
+                      <figure class="flex flex-col grow py-10 w-full font-medium bg-white rounded-md border border-solid border-slate-400 border-opacity-30 max-md:mt-6 max-md:max-w-full">
+                        <figcaption class="flex z-10 flex-col px-7 max-md:pl-5 max-md:max-w-full">
+                          <h3 class="text-lg leading-5 text-stone-500">User Bifurcation</h3>
+                          <p class="mt-10 text-base text-black">
+                            <span class="text-2xl font-bold">50</span>
+                            <br />
+                            Non-Humber Students - 34%
+                          </p>
+                        </figcaption>
+                        <div class="flex flex-col pr-14 pl-7 mt-0 text-base text-black max-md:px-5 max-md:max-w-full">
+                          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/522d86f5f4cd2af0214f9dd95b52f22f2e99d4451f317b2c64d45f219fcefc31?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User Bifurcation Pie Chart" class="max-w-full aspect-square w-[273px]" />
+                          <p>
+                            <span class="text-2xl font-bold">20</span>
+                            <br />
+                            Humber Students - 66%
+                          </p>
+                        </div>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </main>
+      </section>
+</body>
+<footer class="bg-gray-50 text-zinc-900">
+  <div class="flex justify-center items-center px-16 py-5 max-md:px-5">
+    <div class="flex gap-5 justify-between w-full max-w-[1176px] max-md:flex-wrap max-md:max-w-full">
+      <div class="flex gap-5 self-start mt-1.5 text-sm leading-5">
+        <p class="grow">© 2024 Humber, Inc.</p>
+        <div class="flex gap-2 whitespace-nowrap">
+          <span class="my-auto" aria-hidden="true">•</span>
+          <a href="#">Privacy</a>
+          <span class="my-auto" aria-hidden="true">•</span>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+      <div class="flex gap-4 text-xs font-bold leading-5 text-right uppercase whitespace-nowrap">
+        <p class="grow my-auto">cad</p>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/cff1f4a67876afc3be21a732af792a5e25fac8f4d6ff8839d3917beaffb5c2f4?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/3494ba665b64f260388be3c37179af4383b547d6d0ae43f65f4370b331c955e9?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/212cd9a62a723a58bb5b3d307dd706445df199820086a873152e53bea2ce6573?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b77a472898b1bfc73bddbd8254a4986b09ed8f267996d5b24e850d2f903cb2d?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 w-5 aspect-square" />
+      </div>
+    </div>
+  </div>
+</footer>
