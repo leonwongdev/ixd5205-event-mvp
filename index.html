@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Home - IXD Team 14</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="box-border">
     <!-- header -->
     <div
-      class="flex gap-5 justify-between px-5 py-3 w-full bg-white max-md:flex-wrap max-md:px-5 max-md:max-w-full"
+      class="flex gap-5 justify-between px-10 py-3 w-full bg-white max-md:flex-wrap max-md:px-10 max-md:max-w-"
     >
       <div
         class="flex gap-5 justify-between items-start max-md:flex-wrap max-md:max-w-full"
@@ -66,7 +67,7 @@
       </div>
     </div>
     <!-- banner -->
-    <div class="self-center w-full max-w-[1440px] max-md:max-w-full mb-2">
+    <div class="self-center w-full max-w-[1440px] max-md:max-w-full mb-2 px-10">
       <div class="flex gap-5 max-md:flex-col max-md:gap-0">
         <div class="flex flex-col w-[46%] max-md:ml-0 max-md:w-full">
           <div
@@ -116,7 +117,7 @@
     </div>
     <!-- end banner, start nav bar bottom -->
     <div
-      class="flex gap-5 items-center text-2xl font-medium text-sky-950 max-md:flex-wrap max-md:max-w-full mb-2 mx-3"
+      class="flex gap-5 items-center text-2xl font-medium text-sky-950 max-md:flex-wrap max-md:max-w-full mb-2"
     >
       <img
         loading="lazy"
@@ -137,38 +138,41 @@
       <div class="flex-auto self-stretch my-auto">TedTalks</div>
     </div>
     <!-- noti -->
-    <div
-      class="flex gap-5 justify-between items-center px-9 py-3.5 w-full text-2xl font-medium rounded-xl border-2 border-dashed bg-neutral-100 border-slate-400 text-sky-950 max-md:flex-wrap max-md:px-5 max-md:max-w-full mb-2"
-    >
-      <div class="flex gap-5 self-stretch max-md:flex-wrap">
-        <img
-          loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/3516d751309c58d406d1ba5da8fab49c11774442d3588c190dc3a79fefc58f56?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
-          class="shrink-0 aspect-[0.97] w-[60px]"
-        />
-        <div class="flex-auto my-auto max-md:max-w-full">
-          Coming Up: Networking for UXers
+    <div class="noti-wrapper px-10 mt-12">
+      <div
+        class="flex gap-5 justify-between items-center px-9 py-3.5 w-full text-2xl font-medium rounded-xl border-2 border-dashed bg-neutral-100 border-slate-400 text-sky-950 max-md:flex-wrap max-md:px-5 max-md:max-w-full mb-2"
+      >
+        <div class="flex gap-5 self-stretch max-md:flex-wrap">
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3516d751309c58d406d1ba5da8fab49c11774442d3588c190dc3a79fefc58f56?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 aspect-[0.97] w-[60px]"
+          />
+          <div class="flex-auto my-auto max-md:max-w-full">
+            Coming Up: Networking for UXers
+          </div>
+        </div>
+        <div
+          class="flex gap-5 self-stretch my-auto max-md:flex-wrap max-md:max-w-full"
+        >
+          <div>10th April</div>
+          <div>3:30 pm</div>
+          <div class="flex-auto">North Campus</div>
+        </div>
+        <div
+          class="justify-center self-stretch px-5 py-2.5 my-auto text-base bg-gray-200 rounded-lg border border-solid border-slate-400"
+        >
+          View Details
         </div>
       </div>
-      <div
-        class="flex gap-5 self-stretch my-auto max-md:flex-wrap max-md:max-w-full"
-      >
-        <div>10th April</div>
-        <div>3:30 pm</div>
-        <div class="flex-auto">North Campus</div>
-      </div>
-      <div
-        class="justify-center self-stretch px-5 py-2.5 my-auto text-base bg-gray-200 rounded-lg border border-solid border-slate-400"
-      >
-        View Details
-      </div>
     </div>
+
     <!-- upcoming event -->
     <div
-      class="flex gap-5 mt-16 w-full text-sky-950 max-md:flex-wrap max-md:pr-5 max-md:mt-10 max-md:max-w-full"
+      class="flex gap-5 mt-16 w-full text-sky-950 max-md:flex-wrap max-md:pr-5 max-md:mt-10 max-md:max-w-full px-10"
     >
       <div class="flex-auto text-3xl font-semibold max-md:max-w-full">
-        Upcoming events near you
+        Base on your searches
       </div>
       <div class="flex gap-5 justify-between text-base font-medium">
         <div
@@ -183,80 +187,34 @@
         />
       </div>
     </div>
-    <!-- cards -->
-    <div class="mt-8 max-md:pr-5 max-md:max-w-full">
+    <!-- base on your searches cards -->
+    <div class="mt-8 max-md:pr-5 max-md:max-w-full px-10">
       <div class="flex gap-5 max-md:flex-col max-md:gap-0">
         <div class="flex flex-col w-3/12 max-md:ml-0 max-md:w-full">
           <div
-            class="flex flex-col grow pb-4 mx-auto w-full text-base leading-6 bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
-          >
-            <a href="eventDetails.html">
-              <img
-                loading="lazy"
-                srcset="
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
-                  https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&
-                "
-                class="w-full aspect-[1.37]"
-            /></a>
-
-            <div class="flex gap-5 justify-between mx-5 mt-6 max-md:mx-2.5">
-              <div class="flex flex-col">
-                <div class="text-sky-950">Marketing Master-class</div>
-                <div class="mt-3.5 text-stone-500">Tuesday, April 8th</div>
-              </div>
-              <div class="self-start text-sky-950">FREE</div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-          <div
             class="flex flex-col grow pb-4 w-full bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
           >
-            <div class="shrink-0 rounded-md bg-zinc-300 h-[200px]"></div>
+            <img
+              loading="lazy"
+              srcset="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/96c1899311cb64cfda5923bb8b0b46275ccdc8ec668acb633ca3c4823403520e?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+              "
+              class="w-full aspect-[1.61]"
+            />
             <div class="flex flex-col px-4 mt-4">
               <div
                 class="flex gap-5 text-lg font-medium leading-5 text-sky-950"
               >
-                <div class="flex-auto">Marketing Master-class</div>
-                <div>FREE</div>
-              </div>
-              <div class="mt-5 text-base leading-6 text-neutral-400">
-                Tuesday, April 8th
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-          <div
-            class="flex flex-col grow pb-4 mx-auto w-full text-base leading-6 bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
-          >
-            <div class="shrink-0 rounded-md bg-zinc-300 h-[200px]"></div>
-            <div class="flex gap-5 justify-between mx-5 mt-6 max-md:mx-2.5">
-              <div class="flex flex-col">
-                <div class="text-sky-950">Marketing Master-class</div>
-                <div class="mt-3.5 text-neutral-400">Tuesday, April 8th</div>
-              </div>
-              <div class="self-start text-sky-950">FREE</div>
-            </div>
-          </div>
-        </div>
-        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
-          <div
-            class="flex flex-col grow pb-4 w-full bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
-          >
-            <div class="shrink-0 rounded-md bg-zinc-300 h-[200px]"></div>
-            <div class="flex flex-col px-4 mt-4">
-              <div
-                class="flex gap-5 text-lg font-medium leading-5 text-sky-950"
-              >
-                <div class="flex-auto">Marketing Master-class</div>
+                <div class="flex-auto">
+                  <a href="eventDetails.html">Marketing Master-class</a>
+                </div>
                 <div>FREE</div>
               </div>
               <div class="mt-5 text-base leading-6 text-stone-500">
@@ -265,6 +223,151 @@
             </div>
           </div>
         </div>
+        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+          <div
+            class="flex flex-col grow pb-4 w-full bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
+          >
+            <img
+              loading="lazy"
+              srcset="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/c490f0210d9e06ed023abc8f5f8b7e7960aa1f1d2743b9d829798565958c41a5?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+              "
+              class="w-full aspect-[1.61]"
+            />
+            <div class="flex flex-col px-4 mt-4">
+              <div
+                class="flex gap-5 text-lg font-medium leading-5 text-sky-950"
+              >
+                <div class="flex-auto">User Experience -class</div>
+                <div>FREE</div>
+              </div>
+              <div class="mt-5 text-base leading-6 text-stone-500">
+                Wednesday, April 12th
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+          <div
+            class="flex flex-col grow pb-4 w-full bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
+          >
+            <img
+              loading="lazy"
+              srcset="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/306d9c989890de2ecf5209012a358a504429a0246312211bbcb4104d90b11b4f?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+              "
+              class="w-full aspect-[1.61]"
+            />
+            <div class="flex flex-col px-4 mt-4">
+              <div
+                class="flex gap-5 text-lg font-medium leading-5 text-sky-950"
+              >
+                <div class="grow">Virtual Reality for Hosp...</div>
+                <div>FREE</div>
+              </div>
+              <div class="mt-5 text-base leading-6 text-stone-500">
+                Thursday, April 13th
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col ml-5 w-3/12 max-md:ml-0 max-md:w-full">
+          <div
+            class="flex flex-col grow pb-4 w-full bg-white rounded-lg border border-solid border-slate-400 border-opacity-40 max-md:mt-6"
+          >
+            <img
+              loading="lazy"
+              srcset="
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+                https://cdn.builder.io/api/v1/image/assets/TEMP/bfe79536f6096fb438647e9753c1be664f14a606dfbb6150597f837c085acc24?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+              "
+              class="w-full aspect-[1.61]"
+            />
+            <div class="flex flex-col px-4 mt-4">
+              <div
+                class="flex gap-5 text-lg font-medium leading-5 text-sky-950"
+              >
+                <div class="grow">Hackathon - Gamification</div>
+                <div>FREE</div>
+              </div>
+              <div class="mt-6 text-base leading-6 text-stone-500">
+                Thursday, April 20th
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- event by organizer -->
+    <div
+      class="mt-16 text-3xl font-semibold text-sky-950 max-md:mt-10 max-md:max-w-full px-10"
+    >
+      Events by organisors
+    </div>
+
+    <!-- event by organzier card -->
+    <div
+      class="flex gap-5 justify-between px-px mt-6 text-lg text-slate-400 max-md:flex-wrap max-md:max-w-full mx-10"
+    >
+      <div
+        class="justify-center items-center px-2 py-2 whitespace-nowrap bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        Ignite
+      </div>
+      <div
+        class="justify-center px-10 py-2 bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        Media and Arts
+      </div>
+      <div
+        class="justify-center px-10 py-2 bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        Social Science
+      </div>
+      <div
+        class="justify-center px-10 py-2 text-center bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        International
+        <br />
+        Center
+      </div>
+      <div
+        class="justify-center items-center px-10 py-2 text-center bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        Business
+      </div>
+      <div
+        class="justify-center px-5 py-2 text-center bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        Nursing and Care
+      </div>
+      <div
+        class="justify-center px-5 py-2 text-center bg-white rounded border border-solid border-slate-400 max-md:px-5"
+      >
+        International
+        <br />
+        Center
       </div>
     </div>
 
