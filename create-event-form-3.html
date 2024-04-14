@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Create Event - Step 3</title>
+  </head>
+  <body>
+    <!-- header -->
+    <div
+      class="flex flex-col px-10 py-3 w-full bg-white max-md:px-5 max-md:max-w-full"
+    >
+      <div
+        class="flex gap-5 justify-between w-full max-md:flex-wrap max-md:pr-5 max-md:max-w-full"
+      >
+        <div
+          class="flex gap-5 justify-between items-center self-start mt-2.5 text-base leading-6 text-stone-500 max-md:flex-wrap max-md:max-w-full"
+        >
+          <img
+            loading="lazy"
+            srcset="
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=100   100w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=200   200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=400   400w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=800   800w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1200 1200w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=1600 1600w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&width=2000 2000w,
+              https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=7c67d960e2784e7e93ba67313e8c5317&
+            "
+            class="shrink-0 max-w-full aspect-[5] w-[153px]"
+          />
+          <div
+            class="self-start text-lg font-medium text-sky-950 border-b-2 border-sky-950"
+          >
+            Dashboard
+          </div>
+          <div class="">All Events</div>
+          <div class="">Help</div>
+        </div>
+        <div
+          class="flex gap-5 justify-between max-md:flex-wrap max-md:max-w-full"
+        >
+          <div
+            class="flex gap-3 items-start px-5 py-3 text-xs leading-5 bg-white rounded-lg border border-solid border-slate-400 text-slate-400"
+          >
+            <img
+              loading="lazy"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/879d4935f60a32df3280b12615d728b0e12888d09e0a76707b67681e5a7aade4?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+              class="shrink-0 aspect-square fill-slate-400 w-[18px]"
+            />
+            <div class="flex-auto">Search Anything..</div>
+          </div>
+          <div
+            class="justify-center px-5 py-2.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950"
+          >
+            Explore All Events
+          </div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/a95e8185bb3fd4c4f4e860ab5de79034e1a1442c5058827ce56cf0bc8493afd3?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 my-auto w-5 aspect-square"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/0a14b02fb0d200d2abd8342ecd7ad7fd1b3c6572a0236bd8d4b6c20c11b175bf?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 my-auto w-9 aspect-square"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Container -->
+    <div class="px-10">
+      <div class="text-lg font-medium text-neutral-400 max-md:max-w-full">
+        Breadcrumbs &gt; From Somewhere &gt; Create Event &gt;
+      </div>
+
+      <div
+        class="my-12 text-3xl font-semibold text-sky-950 max-md:mt-10 max-md:max-w-full"
+      >
+        Create an Event
+      </div>
+
+      <!-- form -->
+      <!-- 3 Column -->
+      <div class="grid grid-cols-3 gap-2">
+        <!-- Column 1 -->
+        <div class="">
+          <div
+            class="shrink-0 max-w-full h-2 rounded-[200px] w-[440px] bg-[#00275D]"
+          ></div>
+          <div
+            class="flex gap-5 justify-between mt-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full"
+          >
+            <div class="flex flex-col self-start text-sky-950">
+              <div class="text-base">Step 1:</div>
+              <div class="mt-3.5 text-2xl font-medium">General Info</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Event Name</div>
+            <div class="mt-1 text-sky-950 font-semibold">
+              Ux Design: Upcoming Patterns
+            </div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Event Date</div>
+            <div class="mt-1 text-sky-950 font-semibold">
+              8 th April, Tuesday
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Event Type</div>
+            <div class="mt-1 text-sky-950 font-semibold">Educational</div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Number of Participants
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">120</div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Enter Venue Name
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">
+              Humber College, North Campus
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Entry Restriction
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">Open To All</div>
+          </div>
+          <!--  -->
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Ticket Price</div>
+            <div class="mt-1 text-sky-950 font-semibold">FREE</div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Media</div>
+            <div class="flex gap-2">
+              <img
+                class="w-64 h-[135px] rounded-lg inline-block"
+                src="/img/create-event-media-1.jpeg"
+              />
+              <img
+                class="w-64 h-[135px] rounded-lg inline-block"
+                src="/img/create-event-media-2.jpeg"
+              />
+              <img
+                class="w-64 h-[135px] rounded-lg inline-block"
+                src="/img/create-event-media-3.jpeg"
+              />
+              <img
+                class="w-64 h-[135px] rounded-lg inline-block"
+                src="/img/create-event-media-4.jpeg"
+              />
+            </div>
+          </div>
+          <div
+            class="w-[70%] flex-wrap justify-center content-center self-start px-3 py-3.5 mt-10 text-base font-medium text-yellow-500 rounded-lg bg-sky-950 max-md:px-5 max-md:mt-10"
+          >
+            Confirm and Preview
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="">
+          <div
+            class="shrink-0 max-w-full h-2 rounded-[200px] w-[440px] bg-[#00275D]"
+          ></div>
+          <div
+            class="flex gap-5 justify-between mt-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full"
+          >
+            <div class="flex flex-col self-start text-sky-950">
+              <div class="text-base">Step 2:</div>
+              <div class="mt-3.5 text-2xl font-medium">
+                Price, Venue & Media
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Enter Start Time
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">03:30 P.M.</div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Enter Category
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">UX Design</div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Guests/ Special Appearence (Optional)
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">Sarah Spark</div>
+            <div class="mt-1 text-sky-950 font-semibold">Kenny Parik</div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Venue Google Link
+            </div>
+            <div class="mt-1 text-sky-400 font-semibold underline">
+              Demo Google Link
+            </div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">Discountable</div>
+            <div class="mt-1 text-sky-950 font-semibold">Yes</div>
+          </div>
+        </div>
+        <!-- Column 3 -->
+        <div class="">
+          <div
+            class="shrink-0 max-w-full h-2 rounded-[200px] w-[440px] bg-gradient-to-r from-[#00275D] to-[#4392FF]"
+          ></div>
+          <div
+            class="flex gap-5 justify-between mt-5 max-md:flex-wrap max-md:pr-5 max-md:max-w-full"
+          >
+            <div class="flex flex-col self-start text-sky-950">
+              <div class="text-base">Step 3:</div>
+              <div class="mt-3.5 text-2xl font-medium">Review & Confirm</div>
+            </div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Event End Time
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">07:00 P.M.</div>
+          </div>
+
+          <div class="flex flex-col self-start mt-4">
+            <div class="text-stone-500 text-lg font-semibold">
+              Entry Restriction
+            </div>
+            <div class="mt-1 text-sky-950 font-semibold">Open To All</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <div
+      class="flex justify-center items-center px-16 py-5 mt-14 w-full bg-gray-50 text-zinc-900 max-md:px-5 max-md:mt-10 max-md:max-w-full"
+    >
+      <div
+        class="flex gap-5 justify-between w-full max-w-[1176px] max-md:flex-wrap max-md:max-w-full"
+      >
+        <div class="flex gap-5 self-start mt-1.5 text-sm leading-5">
+          <div class="grow">© 2024 Humber, Inc.</div>
+          <div class="flex gap-2 whitespace-nowrap">
+            <div class="my-auto">•</div>
+            <div>Privacy</div>
+            <div class="my-auto">•</div>
+            <div>Terms</div>
+          </div>
+        </div>
+        <div
+          class="flex gap-4 text-xs font-bold leading-5 text-right uppercase whitespace-nowrap"
+        >
+          <div class="grow my-auto">cad</div>
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/cff1f4a67876afc3be21a732af792a5e25fac8f4d6ff8839d3917beaffb5c2f4?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 w-5 aspect-square"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/3494ba665b64f260388be3c37179af4383b547d6d0ae43f65f4370b331c955e9?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 w-5 aspect-square"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/212cd9a62a723a58bb5b3d307dd706445df199820086a873152e53bea2ce6573?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 w-5 aspect-square"
+          />
+          <img
+            loading="lazy"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/7ccee2ff9565ad2dbb6be82bba4e18a4d0af31f937e100169ff3d1fa16db28c6?apiKey=7c67d960e2784e7e93ba67313e8c5317&"
+            class="shrink-0 w-5 aspect-square"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
