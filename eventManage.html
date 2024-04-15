@@ -7,38 +7,46 @@
     <title>Event Management</title>
   </head>
   <body>
-<section class="flex gap-5 justify-between px-9 py-4 bg-white max-md:flex-wrap max-md:px-5">
-    <div class="flex gap-5 justify-between text-sm leading-5 text-center max-md:flex-wrap max-md:max-w-full">
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a31bf872c53b2dacc19cc10d2d861ef12450b0c96dec5ee145e81c55f3825b37?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Company logo" class="my-auto aspect-[5] w-[230px]" />
-      <nav class="flex gap-0 bg-black bg-opacity-0">
-        <div class="flex flex-col justify-end pt-5 font-bold whitespace-nowrap bg-black bg-opacity-0 text-zinc-900">
-          <div class="self-center">Dashboard</div>
-          <div class="shrink-0 mt-4 h-1 bg-zinc-900"></div>
-        </div>
-        <div class="grow justify-center px-14 py-5 text-gray-600 bg-black bg-opacity-0 w-fit max-md:px-5">
-          All Events
-        </div>
-      </nav>
-    </div>
-    <div class="flex gap-5 justify-between self-start mt-1 text-base font-medium text-yellow-500">
-      <button class="flex-wrap justify-center content-center px-7 py-3.5 rounded-lg bg-sky-950 max-md:px-5">
-        Create Event
-      </button>
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76664882f96fa368218b67e2a608ff2949b1078f6decbee983766f3a293a2bb?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Notification icon" class="shrink-0 my-auto w-6 aspect-square" />
-      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/4ade6ff717f45dd2f93689bab417dc3b973a002e0fd26b7e1a9af235a2c5c746?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User profile picture" class=" mt-2 shrink-0 self-start w-9 shadow-sm aspect-square" />
-    </div>
-  </section>
+    <div class="mt-8 mb-10 flex gap-5 justify-between max-md:flex-wrap">
+      <div class="flex gap-5 justify-between items-start self-start px-5 mt-2 text-base leading-6 text-stone-500 max-md:flex-wrap max-md:max-w-full">
+        <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a6fb13baea6efba00804e179e710d8b844ae0d563c12a71fdcc55fd55a2a5ce0?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Company logo" class="shrink-0 max-w-full aspect-[5] w-[153px]" />
+        <a href="#" class="active">Dashboard</a>
+        <nav class="flex flex-col self-stretch text-lg font-medium leading-5 whitespace-nowrap text-sky-950">
+          
+          <a href="#">All Events</a>
+          <div class="shrink-0 self-center mt-4 bg-sky-950 h-[3px] w-[53px]" aria-hidden="true"></div>
+        </nav>
+        
+        <a href="#">Help</a>
+      </div>
+      <div class="flex gap-5 justify-between px-5 max-md:flex-wrap max-md:max-w-full">
+        <form class="flex gap-3 items-start px-5 py-3 text-xs leading-5 bg-white rounded-lg border border-solid border-slate-400 text-slate-400">
+          <label for="search" class="sr-only">Search Anything..</label>
+          <input type="search" id="search" placeholder="Search Anything.." class="flex-auto" />
+          <button type="submit" aria-label="Search">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/879d4935f60a32df3280b12615d728b0e12888d09e0a76707b67681e5a7aade4?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 aspect-square fill-slate-400 w-[18px]" />
+          </button>
+        </form>
+        <a href="#" class="justify-center px-5 py-2.5 text-base font-medium bg-white rounded-lg border border-solid border-sky-950 text-sky-950">Create a Event</a>
+        <button type="button" aria-label="Notifications">
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/bd65dcea0314c80ce4ca890a022bd656c5f9b2bc8055a85531f0096144619fef?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="" class="shrink-0 self-start mt-5 w-5 aspect-square" />
+        </button>
+        <button type="button" aria-label="User profile">  
+          <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/2ee9ebf897b539f8669d22490898bde871df820b03d40df9456600997e9dee2c?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="User avatar" class="shrink-0 self-start mt-1 w-9 aspect-square" />
+        </button>
+      </div>
+  </div>
   <nav aria-label="Breadcrumb">
-    <ol class="ml-10 list-none p-0 inline-flex items-center text-lg font-medium text-neutral-400">
+    <ol class="ml-5 list-none p-0 inline-flex items-center text-lg font-medium text-neutral-400">
       <li class="flex items-center">
         <a href="#" class="hover:text-neutral-500 focus:outline-none focus:underline">Homepage</a>
         <svg class="fill-current w-3 h-3 mx-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
       </li>
     </ol>
   </nav>
-  <section class=" ml-10 mb-10 flex gap-5 px-0.5 mt-11 w-full text-black max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
+  <section class=" ml-5 mb-10 flex gap-5 px-0.5 mt-11 w-full text-black max-md:flex-wrap max-md:mt-10 max-md:max-w-full">
     <h1 class="mr-96 justify-around text-3xl font-bold">Manage All Events</h1>
-    <div class="flex gap-5 ml-72 justify-between self-start mt-1 text-base">
+    <div class="flex gap-5 ml-80 justify-between self-start mt-1 text-base">
       <div class="flex gap-3.5 items-start self-start">
         <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e7bb54fe66d54c1de272369e09eaf863f757e37baea382cf2e554a017a2e68a5?apiKey=ab9d234eff8c4ce2b318dc21b9b0933a&" alt="Sort icon" class="shrink-0 mt-2 aspect-square w-[18px]" />
         <p>Sort (A-Z)</p>
@@ -69,9 +77,9 @@
                 <span>100</span>
               </div>
               <div class="flex gap-3 mt-7 text-sky-950">
-                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
               </div>
             </div>
           </article>
@@ -93,9 +101,9 @@
                 <span>100</span>
               </div>
               <div class="flex gap-3 mt-7 text-sky-950">
-                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
               </div>
             </div>
           </article>
@@ -117,9 +125,9 @@
                 <span>100</span>
               </div>
               <div class="flex gap-3 mt-7 text-sky-950">
-                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
               </div>
             </div>
           </article>
@@ -145,9 +153,9 @@
                 <span>100</span>
               </div>
               <div class="flex gap-5 mt-7 text-sky-950">
-                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
               </div>
             </div>
           </article>
@@ -169,9 +177,9 @@
                 <span>100</span>
               </div>
               <div class="flex gap-5 mt-7 text-sky-950">
-                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
-                <button class="flex-wrap justify-center content-center px-7 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
+                <a href="eventOverview.html" class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Overview</a>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Edit Event</button>
+                <button class="flex-wrap justify-center content-center px-3 py-3.5 whitespace-nowrap bg-white rounded-lg border border-solid border-sky-950 max-md:px-5">Share</button>
               </div>
             </div>
           </article>
